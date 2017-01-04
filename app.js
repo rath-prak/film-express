@@ -10,6 +10,7 @@ let app = express();
 
 app.set('port', process.env.PORT || 3000);
 const PORT = app.get('port');
+app.set('author', 'Rathania');
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
