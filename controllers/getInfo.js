@@ -10,8 +10,7 @@ router.get('/films', function(req, res){
 			}else{
 				var details = JSON.parse(body).Writer;
 				console.log(details)
-				// res.send(`<h1 style="font, sans-serif"> ${details} </h1>`)
-				res.send(body)
+				res.send(`<h1 style="font, sans-serif"> ${details} </h1>`)
 				}
 			})
 
